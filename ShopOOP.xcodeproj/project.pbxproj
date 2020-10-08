@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		CA68ACF6252E94320062578B /* ShopOOP.h in Headers */ = {isa = PBXBuildFile; fileRef = CA68ACF4252E94320062578B /* ShopOOP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA68AD03252E94400062578B /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68ACFE252E94400062578B /* Shop.swift */; };
+		CA68AD04252E94400062578B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68ACFF252E94400062578B /* Product.swift */; };
+		CA68AD05252E94400062578B /* ShopNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68AD00252E94400062578B /* ShopNetwork.swift */; };
+		CA68AD06252E94400062578B /* ShopErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA68AD01252E94400062578B /* ShopErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA68ACF1252E94320062578B /* ShopOOP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShopOOP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA68ACF4252E94320062578B /* ShopOOP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopOOP.h; sourceTree = "<group>"; };
 		CA68ACF5252E94320062578B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA68ACFE252E94400062578B /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Shop.swift; path = ../../ShopLib/ShopLib/Shop.swift; sourceTree = "<group>"; };
+		CA68ACFF252E94400062578B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../../ShopLib/ShopLib/Product.swift; sourceTree = "<group>"; };
+		CA68AD00252E94400062578B /* ShopNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopNetwork.swift; path = ../../ShopLib/ShopLib/ShopNetwork.swift; sourceTree = "<group>"; };
+		CA68AD01252E94400062578B /* ShopErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopErrors.swift; path = ../../ShopLib/ShopLib/ShopErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,10 @@
 		CA68ACF3252E94320062578B /* ShopOOP */ = {
 			isa = PBXGroup;
 			children = (
+				CA68ACFF252E94400062578B /* Product.swift */,
+				CA68ACFE252E94400062578B /* Shop.swift */,
+				CA68AD01252E94400062578B /* ShopErrors.swift */,
+				CA68AD00252E94400062578B /* ShopNetwork.swift */,
 				CA68ACF4252E94320062578B /* ShopOOP.h */,
 				CA68ACF5252E94320062578B /* Info.plist */,
 			);
@@ -94,6 +106,7 @@
 				TargetAttributes = {
 					CA68ACF0252E94320062578B = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -130,6 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA68AD05252E94400062578B /* ShopNetwork.swift in Sources */,
+				CA68AD06252E94400062578B /* ShopErrors.swift in Sources */,
+				CA68AD03252E94400062578B /* Shop.swift in Sources */,
+				CA68AD04252E94400062578B /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		CA68ACFA252E94320062578B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -277,6 +295,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.ShopOOP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -284,6 +303,7 @@
 		CA68ACFB252E94320062578B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
